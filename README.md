@@ -4,6 +4,20 @@
 
 This API provides endpoints to manage customer data and usage data. It allows CRUD (Create, Read, Update, Delete) operations on both `customers` and `usage_data` tables.
 
+### **Technologies Used**
+
+- **Node.js**: JavaScript runtime for building the server-side of the API.
+- **Express.js**: Web framework for creating the RESTful API.
+- **Sequelize**: ORM for interacting with the MySQL database.
+- **MySQL**: Relational database for storing customer and usage data.
+- **MySQL Workbench**: Tool for managing the local MySQL database.
+- **Insomnia**: Tool for testing API endpoints.
+- **dotenv**: Module for managing environment variables.
+- **Git**: Version control system for managing project changes.
+- **GitHub**: Platform for hosting the project repository.
+- **Nodemon**: Utility for automatically restarting the server during development.
+
+
 ## Base URL
 
 
