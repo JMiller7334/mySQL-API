@@ -4,8 +4,8 @@
  */
 const connection = {
     databaseName: 'dashboard_schema',
-    username: 'root',
-    password: 'cheeseCake48#!',
+    username: '',
+    password: '',
     host: 'localhost', // Ensure this is included
     port: 3306
 };
