@@ -152,8 +152,8 @@ This API provides endpoints to manage customer data and usage data. It allows CR
       {
         "id": 1,
         "customerId": 1,
-        "usageDate": "2024-08-30",
-        "amount": 123.45
+        "usage_date": "2024-08-30",
+        "customer_usage": 123.45
       },
       ...
     ]
@@ -186,8 +186,8 @@ This API provides endpoints to manage customer data and usage data. It allows CR
     ```json
     {
       "customerId": 1,
-      "usageDate": "2024-08-31",
-      "amount": 678.90
+      "usage_date": "2024-08-31",
+      "customer_usage": 678.90
     }
     ```
 
@@ -199,8 +199,8 @@ This API provides endpoints to manage customer data and usage data. It allows CR
     {
       "id": 2,
       "customerId": 1,
-      "usageDate": "2024-08-31",
-      "amount": 678.90
+      "usage_date": "2024-08-31",
+      "customer_usage": 678.90
     }
     ```
 
@@ -225,8 +225,8 @@ This API provides endpoints to manage customer data and usage data. It allows CR
     ```json
     {
       "customerId": 1,
-      "usageDate": "2024-09-01",
-      "amount": 123.45
+      "usage_date": "2024-09-01",
+      "customer_usage": 123.45
     }
     ```
 
@@ -238,8 +238,8 @@ This API provides endpoints to manage customer data and usage data. It allows CR
     {
       "id": 2,
       "customerId": 1,
-      "usageDate": "2024-09-01",
-      "amount": 123.45
+      "usage_date": "2024-09-01",
+      "customer_usage": 123.45
     }
     ```
 
