@@ -4,7 +4,7 @@
 
 This API offers endpoints for managing customer and usage data for the Web Dashboard Project. It interacts with a MySQL database and supports full CRUD (Create, Read, Update, Delete) operations on the `customers` and `usage_data` tables.
 
-### **Technologies Used**
+# **Technologies Used**
 
 ## Development Technologies:
 - **Node.js** - JavaScript runtime used for server-side scripting.
