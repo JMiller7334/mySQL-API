@@ -20,7 +20,7 @@ This API offers endpoints for managing customer and usage data for the Web Dashb
 
 ## Deployment Technologies:
 - **VPS (Virtual Private Server)** - Used to host the API and database.
-- **FileZillas** - Used to transfer files between local machine and VPS.
+- **FileZilla** - Used to transfer files between local machine and VPS.
 
 
 ## Base URL
