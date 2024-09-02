@@ -13,7 +13,7 @@ This API offers endpoints for managing customer and usage data for the Web Dashb
 - **MySQL/MariaDB** - Relational database used to store and manage data.
 - **PM2** - Process manager for Node.js applications used to manage and keep the API running.
 
-## Tested With:
+## Testing:
 - **Insomnia** - API client used for testing API endpoints.
 - **MySQL Workbench**: Tool for managing the local MySQL database.
 - **Nodemon**: Utility for automatically restarting the server during development.
