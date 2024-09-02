@@ -2,23 +2,29 @@
 
 ## Overview
 
-This API provides endpoints to manage customer data and usage data. It allows CRUD (Create, Read, Update, Delete) operations on both `customers` and `usage_data` tables.
+This API offers endpoints for managing customer and usage data for the Web Dashboard Project. It interacts with a MySQL database and supports full CRUD (Create, Read, Update, Delete) operations on the `customers` and `usage_data` tables.
 
 ### **Technologies Used**
 
-- **Node.js**: JavaScript runtime for building the server-side of the API.
-- **Express.js**: Web framework for creating the RESTful API.
-- **Sequelize**: ORM for interacting with the MySQL database.
-- **MySQL**: Relational database for storing customer and usage data.
+## Development Technologies:
+- **Node.js** - JavaScript runtime used for server-side scripting.
+- **Express** - Web application framework for Node.js to build the API.
+- **Sequelize** - ORM for interacting with the MySQL/MariaDB database.
+- **MySQL/MariaDB** - Relational database used to store and manage data.
+- **PM2** - Process manager for Node.js applications used to manage and keep the API running.
+
+## Tested With:
+- **Insomnia** - API client used for testing API endpoints.
 - **MySQL Workbench**: Tool for managing the local MySQL database.
-- **Insomnia**: Tool for testing API endpoints.
-- **Git**: Version control system for managing project changes.
-- **GitHub**: Platform for hosting the project repository.
 - **Nodemon**: Utility for automatically restarting the server during development.
+
+## Deployment Technologies:
+- **VPS (Virtual Private Server)** - Used to host the API and database.
+- **FileZillas** - Used to transfer files between local machine and VPS.
 
 
 ## Base URL
-
+`http://jacobjmiller.com:8080`
 
 
 ## Endpoints
@@ -27,7 +33,7 @@ This API provides endpoints to manage customer data and usage data. It allows CR
 
 #### **1. Get All Customers**
 
-- **Endpoint:** `GET /customers`
+- **Endpoint:** `GET /customers?`
 - **Description:** Retrieves a list of all customers.
 - **Response:**
   - **Status Code:** `200 OK`
@@ -103,7 +109,7 @@ This API provides endpoints to manage customer data and usage data. It allows CR
 
 #### **4. Update a Customer**
 
-- **Endpoint:** `PUT /customers`
+- **Endpoint:** `PUT /customers?id={id}`
 - **Description:** Updates an existing customer.
 - **Parameters:**
   - **Query Parameter:** `id` (required) - The ID of the customer.
@@ -138,7 +144,7 @@ This API provides endpoints to manage customer data and usage data. It allows CR
 
 #### **5. Delete a Customer**
 
-- **Endpoint:** `DELETE /customers`
+- **Endpoint:** `DELETE /customers?id={id}`
 - **Description:** Deletes a customer by ID.
 - **Parameters:**
   - **Query Parameter:** `id` (required) - The ID of the customer.
@@ -152,7 +158,7 @@ This API provides endpoints to manage customer data and usage data. It allows CR
 
 ### **1. Get Usage Data by Customer ID**
 
-- **Endpoint:** `GET /usage`
+- **Endpoint:** `GET /usage?`
 - **Description:** Retrieves a list of usage data records. Filters by `customerId` if provided.
 - **Query Parameters:**
   - **customerId** (optional) - The ID of the customer to filter usage data.
@@ -227,7 +233,7 @@ This API provides endpoints to manage customer data and usage data. It allows CR
 
 ### **3. Update Usage Data**
 
-- **Endpoint:** `PUT /usage`
+- **Endpoint:** `PUT /usage?id={id}`
 - **Description:** Updates an existing usage data record.
 - **Query Parameters:**
   - **id** (required) - The ID of the usage data to be updated.
@@ -274,7 +280,7 @@ This API provides endpoints to manage customer data and usage data. It allows CR
 
 ### **4. Delete Usage Data**
 
-- **Endpoint:** `DELETE /usage`
+- **Endpoint:** `DELETE /usage?id={id}`
 - **Description:** Deletes a usage data record by ID.
 - **Query Parameters:**
   - **id** (required) - The ID of the usage data to be deleted.
