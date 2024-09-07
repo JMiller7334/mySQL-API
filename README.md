@@ -156,7 +156,7 @@ This API offers endpoints for managing customer and usage data for the Web Dashb
 
 ## Usage Data API
 
-### **1. Get All Usage Data s**
+### **1. Get All Usage Data**
 
 - **Endpoint:** `GET /usage?`
 - **Description:** Retrieves a list of all usage records.
@@ -177,9 +177,9 @@ This API offers endpoints for managing customer and usage data for the Web Dashb
     ```
 
 
-### **1. Get Usage Data by Customer ID**
+### **2. Get Usage Data by Customer ID**
 
-- **Endpoint:** `GET /usage?`
+- **Endpoint:** `GET /usage?customerId={customerId}`
 - **Description:** Retrieves a list of usage data records. Filters by `customerId` if provided.
 - **Query Parameters:**
   - **customerId** (optional) - The ID of the customer to filter usage data.
@@ -215,7 +215,7 @@ This API offers endpoints for managing customer and usage data for the Web Dashb
     }
     ```
 
-### **2. Create New Usage Data**
+### **3. Create New Usage Data**
 
 - **Endpoint:** `POST /usage`
 - **Description:** Creates a new usage data record.
@@ -252,7 +252,7 @@ This API offers endpoints for managing customer and usage data for the Web Dashb
     }
     ```
 
-### **3. Update Usage Data**
+### **4. Update Usage Data**
 
 - **Endpoint:** `PUT /usage?id={id}`
 - **Description:** Updates an existing usage data record.
@@ -299,7 +299,7 @@ This API offers endpoints for managing customer and usage data for the Web Dashb
     }
     ```
 
-### **4. Delete Usage Data**
+### **5. Delete Usage Data**
 
 - **Endpoint:** `DELETE /usage?id={id}`
 - **Description:** Deletes a usage data record by ID.
