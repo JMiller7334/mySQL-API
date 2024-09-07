@@ -156,6 +156,27 @@ This API offers endpoints for managing customer and usage data for the Web Dashb
 
 ## Usage Data API
 
+### **1. Get All Usage Data s**
+
+- **Endpoint:** `GET /usage?`
+- **Description:** Retrieves a list of all usage records.
+- **Response:**
+  - **Status Code:** `200 OK`
+  - **Body:** JSON array of usage data objects.
+
+    ```json
+    [
+      {
+        "id": 1,
+        "customerId": 1,
+        "usage_month": "2024-08",
+        "customer_usage": 123.45
+      },
+      ...
+    ]
+    ```
+
+
 ### **1. Get Usage Data by Customer ID**
 
 - **Endpoint:** `GET /usage?`
