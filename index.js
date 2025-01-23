@@ -9,6 +9,7 @@
 
 // index.js
 const express = require('express');
+const cors = require('cors');
 
 // modules:
 const sequelize = require('./config/index');
@@ -19,6 +20,7 @@ const { json } = require('sequelize');
 const PORT = 8080;
 const app = express();
 app.use(express.json());
+app.use(cors()); // Enable CORS for all origins during local testing
 
 //CUSTOMER ROUTES:
 app.get('/customers', async (req, res) => {
