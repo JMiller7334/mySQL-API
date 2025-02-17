@@ -6,7 +6,6 @@
  * Nodemon: auto restarts server during development.
  * ----------------------------------------------------
  */
-
 // index.js
 const express = require('express');
 const cors = require('cors');
@@ -178,7 +177,7 @@ app.delete('/usage', async (req, res) => {
       });
   
       if (deleted) {
-        res.status(204).end();  //mo content to send back - success
+        res.status(204).end();  //no content to send back - success
       } else {
         res.status(404).json({ error: 'Usage data not found' });
       }
@@ -188,9 +187,12 @@ app.delete('/usage', async (req, res) => {
 });
   
 
-// Sync with Database and Start Server
+
+// Sync with the database before starting the server
 sequelize.sync().then(() => {
-  app.listen(PORT, () => {
-    console.log(`Server is running on port:${PORT}`);
+
+  // Start HTTP server (port 8080)
+  http.createServer(app).listen(PORT, () => {
+    console.log("Server is running on port 8080 (non-HTTPS)");
   });
 });
