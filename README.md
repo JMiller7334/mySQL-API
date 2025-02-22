@@ -4,6 +4,9 @@
 
 This API offers endpoints for managing customer and usage data for the Web Dashboard Project. It interacts with a MySQL database and supports full CRUD (Create, Read, Update, Delete) operations on the `customers` and `usage_data` tables.
 
+## Related Projects:
+* [MySQL API (PHP Rebuild)](https://github.com/JMiller7334/mySQL-API).
+
 # **Technologies Used**
 
 ## Development Technologies:
