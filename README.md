@@ -1,4 +1,6 @@
 # API Documentation
+> [!CAUTION]  
+> This project is no longer deployed via VPS. Please refer to [MySQL API (PHP Rebuild)](https://github.com/JMiller7334/Mysql-API-PHP) for the service that replaced this.
 
 ## Overview
 
